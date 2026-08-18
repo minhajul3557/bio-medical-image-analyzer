@@ -1,0 +1,182 @@
+[
+  {
+    "image_id": "test_000",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_000\n- Total Objects Detected (n_objects): 8\n- Mean Object Area (pixels): 191.75 (std: 110.89)\n- Mean Eccentricity (0=circle, 1=line): 0.636\n- Mean Solidity (convexity ratio): 0.967\n- Signal Mean Intensity: 0.656\n- Image Area Fraction: 0.0234\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_000\",\n  \"n_objects\": 8,\n  \"mean_area\": 191.75,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_000 contains an 8-object cell population, with a mean object area of 191.75 pixels and a standard deviation of 110.89 pixels. The objects exhibit a high solidity ratio of 0.967, indicating that they are likely to be intact cells. The signal mean intensity is 0.656, suggesting that the cells are well-vascularized. However, the image area fraction of 0.0234 indicates that the cell population occupies only a small portion of the total image area, which may suggest a sparse distribution.\n\n{\n  \"image_id\": \"test_000\",\n  \"n_objects\": 8,\n  \"mean_area\": 191.75,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_000",
+      "n_objects": 8,
+      "mean_area": 191.75,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.0234,
+      "mean_eccentricity": 0.636,
+      "mean_solidity": 0.967
+    }
+  },
+  {
+    "image_id": "test_001",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_001\n- Total Objects Detected (n_objects): 14\n- Mean Object Area (pixels): 201.64 (std: 161.92)\n- Mean Eccentricity (0=circle, 1=line): 0.638\n- Mean Solidity (convexity ratio): 0.947\n- Signal Mean Intensity: 0.674\n- Image Area Fraction: 0.0431\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_001\",\n  \"n_objects\": 14,\n  \"mean_area\": 201.64,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_001 contains a sparse cell population with a mean object area of 201.64 pixels, indicating that most cells are relatively small. The cells exhibit normal solidity and convexity ratios, suggesting they have well-defined boundaries. However, their eccentricity values indicate some elongated shapes, possibly due to the presence of lines or thin structures within the cells. Overall, the cell population appears to be sparse, with an image area fraction of 0.0431, indicating a low density.\n\n{\n  \"image_id\": \"test_001\",\n  \"n_objects\": 14,\n  \"mean_area\": 201.64,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_001",
+      "n_objects": 14,
+      "mean_area": 201.64,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.0431,
+      "mean_eccentricity": 0.638,
+      "mean_solidity": 0.947
+    }
+  },
+  {
+    "image_id": "test_002",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_002\n- Total Objects Detected (n_objects): 26\n- Mean Object Area (pixels): 220.08 (std: 130.27)\n- Mean Eccentricity (0=circle, 1=line): 0.674\n- Mean Solidity (convexity ratio): 0.946\n- Signal Mean Intensity: 0.692\n- Image Area Fraction: 0.0873\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_002\",\n  \"n_objects\": 26,\n  \"mean_area\": 220.08,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_002 contains a sparse cell population with a mean object area of 220.08 pixels, indicating relatively small cells. The cells are mostly normal in shape, with a mean eccentricity of 0.674, suggesting some variability in their elongation or alignment. However, the high solidity of 0.946 indicates that most cells have well-defined boundaries. The signal mean intensity is moderate at 0.692, and the image area fraction is low at 0.0873, indicating a sparse distribution of cells.\n\n{\n  \"image_id\": \"test_002\",\n  \"n_objects\": 26,\n  \"mean_area\": 220.08,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_002",
+      "n_objects": 26,
+      "mean_area": 220.08,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.0873,
+      "mean_eccentricity": 0.674,
+      "mean_solidity": 0.946
+    }
+  },
+  {
+    "image_id": "test_003",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_003\n- Total Objects Detected (n_objects): 19\n- Mean Object Area (pixels): 205.05 (std: 102.87)\n- Mean Eccentricity (0=circle, 1=line): 0.696\n- Mean Solidity (convexity ratio): 0.962\n- Signal Mean Intensity: 0.734\n- Image Area Fraction: 0.0594\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_003\",\n  \"n_objects\": 19,\n  \"mean_area\": 205.05,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_003 contains a sparse cell population with an average area of 205.05 pixels per object, indicating relatively small cells. The mean eccentricity of 0.696 suggests that most objects are elongated, but not irregularly shaped like lines. The high solidity of 0.962 indicates that the cells have well-defined boundaries. The signal mean intensity is moderate at 0.734, and the image area fraction is low at 0.0594.\n\n{\n  \"image_id\": \"test_003\",\n  \"n_objects\": 19,\n  \"mean_area\": 205.05,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_003",
+      "n_objects": 19,
+      "mean_area": 205.05,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.0594,
+      "mean_eccentricity": 0.696,
+      "mean_solidity": 0.962
+    }
+  },
+  {
+    "image_id": "test_004",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_004\n- Total Objects Detected (n_objects): 43\n- Mean Object Area (pixels): 329.42 (std: 279.11)\n- Mean Eccentricity (0=circle, 1=line): 0.656\n- Mean Solidity (convexity ratio): 0.931\n- Signal Mean Intensity: 0.728\n- Image Area Fraction: 0.2161\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_004\",\n  \"n_objects\": 43,\n  \"mean_area\": 329.42,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_004 contains a sparse cell population with a mean object area of 329.42 pixels, indicating that cells are not densely packed. The cells exhibit a normal level of solidity, with a convexity ratio of 0.931, suggesting they have well-defined boundaries. However, their eccentricity is high at 0.656, which may indicate irregular shapes or elongated cell bodies. The signal mean intensity is moderate at 0.728, and the image area fraction is relatively low at 0.2161.\n\n{\n  \"image_id\": \"test_004\",\n  \"n_objects\": 43,\n  \"mean_area\": 329.42,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_004",
+      "n_objects": 43,
+      "mean_area": 329.42,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.2161,
+      "mean_eccentricity": 0.656,
+      "mean_solidity": 0.931
+    }
+  },
+  {
+    "image_id": "test_005",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_005\n- Total Objects Detected (n_objects): 16\n- Mean Object Area (pixels): 407.69 (std: 524.57)\n- Mean Eccentricity (0=circle, 1=line): 0.637\n- Mean Solidity (convexity ratio): 0.929\n- Signal Mean Intensity: 0.713\n- Image Area Fraction: 0.0995\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_005\",\n  \"n_objects\": 16,\n  \"mean_area\": 407.69,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_005 contains a cell population with 16 objects, each having an average area of 407.69 pixels. The cells exhibit a mix of shapes, with a mean eccentricity of 0.637, indicating some degree of asymmetry. However, the majority of the cells appear to be relatively solid and convex, with a mean solidity of 0.929. The signal intensity within the cells is moderate, averaging 0.713, while the overall image area fraction is quite low at 0.0995. Overall, this cell population appears to be sparse, with a normal distribution of object sizes.\n\n{\n  \"image_id\": \"test_005\",\n  \"n_objects\": 16,\n  \"mean_area\": 407.69,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_005",
+      "n_objects": 16,
+      "mean_area": 407.69,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.0995,
+      "mean_eccentricity": 0.637,
+      "mean_solidity": 0.929
+    }
+  },
+  {
+    "image_id": "test_006",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_006\n- Total Objects Detected (n_objects): 8\n- Mean Object Area (pixels): 199.00 (std: 95.18)\n- Mean Eccentricity (0=circle, 1=line): 0.620\n- Mean Solidity (convexity ratio): 0.961\n- Signal Mean Intensity: 0.783\n- Image Area Fraction: 0.0243\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_006\",\n  \"n_objects\": 8,\n  \"mean_area\": 199.00,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_006 contains an 8-object cell population with a mean object area of 199.00 pixels, indicating relatively large cells. The cells exhibit high solidity and convexity ratios, suggesting they are well-defined and have intact membranes. However, their eccentricity values indicate that some cells may be elongated or irregularly shaped. Overall, the image suggests a normal density class with moderate signal intensity, covering only 0.0243 of the total image area.\n\n{\n  \"image_id\": \"test_006\",\n  \"n_objects\": 8,\n  \"mean_area\": 199.00,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_006",
+      "n_objects": 8,
+      "mean_area": 199.0,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.0243,
+      "mean_eccentricity": 0.62,
+      "mean_solidity": 0.961
+    }
+  },
+  {
+    "image_id": "test_007",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_007\n- Total Objects Detected (n_objects): 23\n- Mean Object Area (pixels): 206.52 (std: 162.27)\n- Mean Eccentricity (0=circle, 1=line): 0.652\n- Mean Solidity (convexity ratio): 0.940\n- Signal Mean Intensity: 0.714\n- Image Area Fraction: 0.0725\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_007\",\n  \"n_objects\": 23,\n  \"mean_area\": 206.52,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_007 contains a sparse cell population with a total of 23 objects detected. The cells exhibit varying degrees of solidity, with a mean convexity ratio of 0.940, indicating that most cells are well-defined and have intact membranes. However, some cells appear to be more elongated or irregular in shape, as evidenced by their higher eccentricity values (up to 0.652). Despite these variations, the overall signal intensity of the cell population remains relatively consistent, with a mean intensity of 0.714. The sparse distribution of cells across the image is also notable, occupying only about 7.25% of the total image area.\n\n{\n  \"image_id\": \"test_007\",\n  \"n_objects\": 23,\n  \"mean_area\": 206.52,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_007",
+      "n_objects": 23,
+      "mean_area": 206.52,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.0725,
+      "mean_eccentricity": 0.652,
+      "mean_solidity": 0.94
+    }
+  },
+  {
+    "image_id": "test_008",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_008\n- Total Objects Detected (n_objects): 23\n- Mean Object Area (pixels): 240.52 (std: 217.02)\n- Mean Eccentricity (0=circle, 1=line): 0.598\n- Mean Solidity (convexity ratio): 0.946\n- Signal Mean Intensity: 0.707\n- Image Area Fraction: 0.0844\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_008\",\n  \"n_objects\": 23,\n  \"mean_area\": 240.52,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_008 contains a sparse cell population with a relatively small mean object area, indicating that the cells are not densely packed. The cells exhibit a normal solidity and eccentricity, suggesting they have a roughly circular shape but may be slightly elongated. The signal mean intensity is moderate at 0.707, which could indicate a mix of cellular components. Overall, the cell population appears to be sparse and relatively uniform in size.\n\n{\n  \"image_id\": \"test_008\",\n  \"n_objects\": 23,\n  \"mean_area\": 240.52,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_008",
+      "n_objects": 23,
+      "mean_area": 240.52,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.0844,
+      "mean_eccentricity": 0.598,
+      "mean_solidity": 0.946
+    }
+  },
+  {
+    "image_id": "test_009",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_009\n- Total Objects Detected (n_objects): 21\n- Mean Object Area (pixels): 179.48 (std: 100.64)\n- Mean Eccentricity (0=circle, 1=line): 0.617\n- Mean Solidity (convexity ratio): 0.959\n- Signal Mean Intensity: 0.690\n- Image Area Fraction: 0.0575\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_009\",\n  \"n_objects\": 21,\n  \"mean_area\": 179.48,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_009 contains a population of cells with a total of 21 objects detected. The mean area of these objects is approximately 179.48 pixels, indicating that they are relatively small in size. The eccentricity values suggest that most of the objects are elongated and not circular, with an average eccentricity of 0.617. This indicates a tendency towards linearity rather than circularity. The solidity ratio of 0.959 suggests that the objects have a high degree of convexity, indicating well-defined boundaries. However, the signal mean intensity is relatively low at 0.690, suggesting that the cells may not be highly active or metabolically active. Finally, the image area fraction of 0.0575 indicates that the cell population occupies only a small portion of the total image area.\n\n{\n  \"image_id\": \"test_009\",\n  \"n_objects\": 21,\n  \"mean_area\": 179.48,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_009",
+      "n_objects": 21,
+      "mean_area": 179.48,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.0575,
+      "mean_eccentricity": 0.617,
+      "mean_solidity": 0.959
+    }
+  },
+  {
+    "image_id": "test_010",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_010\n- Total Objects Detected (n_objects): 36\n- Mean Object Area (pixels): 364.97 (std: 428.01)\n- Mean Eccentricity (0=circle, 1=line): 0.738\n- Mean Solidity (convexity ratio): 0.911\n- Signal Mean Intensity: 0.728\n- Image Area Fraction: 0.2005\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_010\",\n  \"n_objects\": 36,\n  \"mean_area\": 364.97,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_010 contains a cell population with a moderate density, consisting of 36 objects. The mean object area is approximately 364.97 pixels, indicating a relatively uniform size distribution among the cells. However, there is some variability in shape, as evidenced by a mean eccentricity of 0.738, suggesting that some cells are more elongated than others. Despite this, the cells maintain a high solidity, with a convexity ratio of 0.911, indicating a well-defined cell boundary. The signal mean intensity is moderate at 0.728, and the image area fraction is relatively low at 0.2005.\n\n{\n  \"image_id\": \"test_010\",\n  \"n_objects\": 36,\n  \"mean_area\": 364.97,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_010",
+      "n_objects": 36,
+      "mean_area": 364.97,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.2005,
+      "mean_eccentricity": 0.738,
+      "mean_solidity": 0.911
+    }
+  },
+  {
+    "image_id": "test_011",
+    "prompt": "You are a biomedical data analyst operating an auditable hybrid pipeline.\nBelow is the DETERMINISTIC REGIONPROPS MEASUREMENT RECORD extracted from U-Net segmentation of an unseen microscopy image:\n\nImage ID: test_011\n- Total Objects Detected (n_objects): 19\n- Mean Object Area (pixels): 194.79 (std: 151.87)\n- Mean Eccentricity (0=circle, 1=line): 0.651\n- Mean Solidity (convexity ratio): 0.951\n- Signal Mean Intensity: 0.720\n- Image Area Fraction: 0.0565\n\nInstructions:\n1. Generate a 1-paragraph narrative summary of the cell population. Every number in the report MUST exist in the summary above. Do NOT invent findings.\n2. Provide a structured JSON record matching this exact schema:\n{\n  \"image_id\": \"test_011\",\n  \"n_objects\": 19,\n  \"mean_area\": 194.79,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}\nOutput ONLY the paragraph followed by the JSON block.\n",
+    "llm_response": "The microscopy image of test_011 reveals a cell population characterized by a moderate density, with 19 objects detected. The cells exhibit varying sizes, as indicated by a mean object area of 194.79 pixels, and display some degree of eccentricity, with an average eccentricity value of 0.651. However, the cells maintain a high solidity, suggesting they are largely convex in shape. The signal mean intensity is moderate at 0.720, while the image area fraction is relatively low at 0.0565.\n\n{\n  \"image_id\": \"test_011\",\n  \"n_objects\": 19,\n  \"mean_area\": 194.79,\n  \"density_class\": \"<sparse | normal | dense | clustered>\",\n  \"quality_flag\": \"<high | medium | low>\"\n}",
+    "json_record": {
+      "image_id": "test_011",
+      "n_objects": 19,
+      "mean_area": 194.79,
+      "density_class": "<sparse | normal | dense | clustered>",
+      "quality_flag": "<high | medium | low>",
+      "area_fraction": 0.0565,
+      "mean_eccentricity": 0.651,
+      "mean_solidity": 0.951
+    }
+  }
+]

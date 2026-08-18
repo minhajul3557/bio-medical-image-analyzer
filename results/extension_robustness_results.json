@@ -1,0 +1,26 @@
+[
+  {
+    "corruption_stage": "Clean",
+    "dice": 0.0,
+    "iou": 0.0,
+    "n_objects_segmented": 0,
+    "mean_object_area": 0.0,
+    "area_fraction": 0.0
+  },
+  {
+    "corruption_stage": "Heavy_Blur",
+    "dice": 0.0,
+    "iou": 0.0,
+    "n_objects_segmented": 0,
+    "mean_object_area": 0.0,
+    "area_fraction": 0.0
+  },
+  {
+    "corruption_stage": "Low_Contrast_Noise",
+    "dice": 0.0,
+    "iou": 0.0,
+    "n_objects_segmented": 0,
+    "mean_object_area": 0.0,
+    "area_fraction": 0.0
+  }
+]

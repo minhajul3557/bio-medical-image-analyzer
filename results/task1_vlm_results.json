@@ -1,0 +1,21 @@
+{
+  "sample_image": "nuclei_dataset/train/images/train_001.png",
+  "naive_prompt": "Describe this medical image in detail and identify any diagnostic findings or abnormalities.",
+  "naive_response": "500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/generate",
+  "structured_prompt": "You are an expert biomedical image analysis assistant. Your role is strictly descriptive and auditable. Do NOT make clinical diagnoses.\nAnalyze the provided fluorescence microscopy image and output ONLY a valid JSON record matching this schema:\n{\n  \"modality\": \"<fluorescence_microscopy | brightfield | unknown>\",\n  \"tissue_type\": \"<stained_nuclei | histology | cell_culture | uncertain>\",\n  \"notable_features\": \"<short string summarizing visual characteristics, object density, contrast, and spatial distribution>\",\n  \"image_quality\": \"<high | medium | low | uncertain>\"\n}\nRules:\n1. If any field is ambiguous or unclear, explicitly set the value to \"uncertain\".\n2. Do NOT output any markdown formatting, preambles, or postscript prose. Output ONLY the JSON object.\n",
+  "structured_response": "500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/generate",
+  "repeated_trials": [
+    {
+      "trial_id": 1,
+      "response": "500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/generate"
+    },
+    {
+      "trial_id": 2,
+      "response": "500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/generate"
+    },
+    {
+      "trial_id": 3,
+      "response": "500 Server Error: Internal Server Error for url: http://127.0.0.1:11434/api/generate"
+    }
+  ]
+}

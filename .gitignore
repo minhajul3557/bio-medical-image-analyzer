@@ -1,0 +1,11 @@
+# Python & Cache
+__pycache__/
+*.pyc
+.DS_Store
+.matplotlib/
+results/.matplotlib/
+
+# System & Temp files
+*.zip
+dataset_temp/
+*.log
