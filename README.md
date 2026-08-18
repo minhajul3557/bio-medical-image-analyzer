@@ -47,11 +47,10 @@ An auditable, reproducible, hybrid biomedical image-analysis pipeline that combi
 │   ├── train_unet.py           # Task 3: U-Net Training, Loss Ablation & Validation Panel Generation
 │   ├── hybrid_pipeline.py      # Task 4: End-to-End Hybrid Pipeline Batch Execution on Test Set
 │   └── extensions.py           # Extra Credit: Robustness Corruption Trace Analysis
-├── report/                     # Academic Report & Figures
-│   ├── biomedical_image_analysis_report.md  # Complete 4-page Academic Report
-│   └── figures/                # Output plots (EDA, U-Net Curves, Predictions, Robustness)
-├── results/                    # Generated Outputs, JSON Records & CSV Export
-│   ├── test_pipeline_summary.csv
+├── results/                    # Generated Outputs, Figures, JSON Records & CSV Export
+│   ├── figures/                # Output plots (EDA, U-Net Curves, Predictions, Robustness)
+│   ├── unet_best_model.pth     # Trained PyTorch U-Net Weights
+│   ├── test_pipeline_summary.csv # Aggregated Test Set CSV Summary
 │   └── task1_vlm_results.json
 ├── dataset/                    # Stained-Nuclei Fluorescence Dataset (256x256 DAPI)
 └── README.md
